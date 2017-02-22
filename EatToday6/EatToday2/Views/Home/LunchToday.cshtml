@@ -1,0 +1,16 @@
+﻿@model IEnumerable<EatToday2.Restaurant>
+@{
+    ViewBag.Title = "LunchToday";
+}
+
+@foreach (var item in Model)
+{
+    <div>
+        <h4>@item.RestID</h4>
+        <div>@item.RestName
+        </div>
+    </div>
+
+}
+
+

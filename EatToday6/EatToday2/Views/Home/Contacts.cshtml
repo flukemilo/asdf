@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<div ng-app="app"  ng-controller="restcontroller as vm">
+
+    <div>
+        {{ message }}
+    </div>
+    
+    <div  class="container">
+        <br />
+        <br />
+        {{ message }}
+        <br />
+        <div >
+            <table>
+                <tr ng-repeat="r in vm.rests">
+
+                    <td> {{r.RestName}} </td>
+
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
